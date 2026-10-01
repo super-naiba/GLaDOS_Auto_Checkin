@@ -108,7 +108,7 @@ gld:sess=xxxxxx; gld:sess.sig=yyyyyy
 
 ## 👥 多账号配置
 
-多个账号的 Cookie 用 `|||`、`&` 或**换行**连接（三种分隔符均可混用，推荐使用 `|||` 以避免与 Cookie 值冲突）：
+多个账号的 Cookie 用 `&` 或**换行**连接：
 
 ```
 cookie_账号1 ||| cookie_账号2 ||| cookie_账号3
@@ -122,7 +122,7 @@ cookie_账号2
 cookie_账号3
 ```
 
-⚠️ Cookie 值本身不得包含 `|||`、`&` 或换行符，否则会被错误拆分。推荐使用 `|||` 作为分隔符，因为 Cookie 值中几乎不可能出现该字符串。
+⚠️ Cookie 值本身不得包含 `&` 或换行符，否则会被错误拆分。
 
 ---
 
@@ -194,7 +194,7 @@ A: 可以，配置多个 Secrets 即可同时推送。
 ### v2.2.0
 
 **适配 / 修复**
-- 适配 GLaDOS 新会话格式：同时支持 `gld:sess` / `gld:sess.sig` 与旧版 `koa:sess` / `koa:sess.sig`
+- 适配 GLaDOS 新会话格式：支持 `gld:sess` / `gld:sess.sig`
 - 新增浏览器 Client Hints 请求头（`sec-ch-ua` 系列），绕过 GLaDOS 设备指纹（device-mismatch）校验
 
 ---
