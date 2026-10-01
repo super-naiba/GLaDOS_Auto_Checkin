@@ -111,7 +111,7 @@ gld:sess=xxxxxx; gld:sess.sig=yyyyyy
 多个账号的 Cookie 用 `&` 或**换行**连接：
 
 ```
-cookie_账号1 ||| cookie_账号2 ||| cookie_账号3
+cookie_账号1 & cookie_账号2 & cookie_账号3
 ```
 
 或
@@ -164,7 +164,7 @@ A: 可以，配置多个 Secrets 即可同时推送。
 
 ## 🔄 更新日志
 
-### v2.0.0
+### v1.0.0
 
 **功能新增**
 - 新增 Telegram Bot 推送
@@ -191,7 +191,7 @@ A: 可以，配置多个 Secrets 即可同时推送。
 
 ---
 
-### v2.2.0
+### v1.2.0
 
 **适配 / 修复**
 - 适配 GLaDOS 新会话格式：支持 `gld:sess` / `gld:sess.sig`
